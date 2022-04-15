@@ -1,0 +1,515 @@
+@font-face{
+    font-family: "baloo";
+    src: url("fonts/Baloo/Baloo-Regular-webfont.eot") format("eot"),
+    url("fonts/Baloo/Baloo-Regular-webfont.svg") format("svg"),
+    url("fonts/Baloo/Baloo-Regular-webfont.ttf") format("truetype"),
+    url("fonts/Baloo/Baloo-Regular-webfont.woff") format("woff");
+
+}
+@font-face {
+    font-family: "amble";
+    src: url("fonts/amble/Amble-Regular-webfont.eot") format("eot"),
+    url("fonts/amble/Amble-Regular-webfont.svg") format("svg"),
+    url("fonts/amble/Amble-Regular-webfont.ttf") format("truetype"),
+    url("fonts/amble/Amble-Regular-webfont.woff") format("woff");
+}
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(218, 218, 218);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(146, 174, 211);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(56, 89, 133);
+
+}
+
+html{
+    background: linear-gradient(to bottom, white, rgb(132, 134, 146) no repeat);
+    scroll-behavior:smooth;
+}
+body{
+    font-family: "amble",sans-serif;
+    width: 1100px;
+    box-shadow: 3px 3px 20px grey;
+    font-size: 16px;
+    margin: auto;
+    background-color: white;
+
+}
+
+
+
+/*---------------------------  NAVHEADER -----------------------------*/
+
+
+.navHeader__menu, .navHeader__croix{
+    display: none;
+}
+.navHeader{
+    background-color: rgb(231, 231, 231);
+    padding: 0 0 20px 0;
+}
+.navHeader1 li{
+    list-style-type: none;
+}
+.navHeader__listes{
+    display: flex;
+    list-style-type: none;
+    justify-content: right;
+    margin: 0;
+}
+.navHeader li a{
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px 20px 0 0;
+    background-color: rgb(41, 48, 80);
+    color: rgb(205, 233, 255);
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 3px gray;
+    width: 130px;
+}
+.navHeader li a:hover{
+    background-color: rgb(70, 122, 189);
+    color: white;
+    transform: scale(1.1, 1.1);
+    transition: 0.2s;
+}
+.acceuil.opened{
+    background-color: rgb(214, 214, 214);
+    color: black
+}
+.acceuil.opened:hover{
+    background-color: rgb(214, 214, 214);
+    color: black
+}
+.passions:hover{
+    animation: none;
+}
+.profil {
+    position: relative;
+    margin: 0;
+}
+.profil img{
+    width: 1100px;
+}
+.bienvenue{
+    font-size: 0.8em;
+    font-family: "amble",sans-serif;
+    position: absolute;
+    bottom: 3px;
+    color: white;
+    background-color: black;
+    opacity: 65%;
+    width:1100px;
+    margin: 0;
+    padding: 10px 0 10px 15px;
+}
+.tag{
+    font-size: 1em;
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    margin: 0;
+    padding: 15px 15px 40px 15px;
+    background: rgba(98, 117, 199, 0.65);
+    text-align: center;
+    min-width: 400px;
+}
+.tag p{
+    font-size: 1em;
+    text-align: left;
+    font-weight: bold;
+    padding: 10px;
+    text-shadow: 2px 2px 5px rgb(185, 185, 185);
+    color: rgb(0,0,0);
+    line-height: 25px;
+
+    
+}
+.tag h1{
+    color: rgb(0,0,0);
+    font-family: "Baloo";
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 2em;
+    border-top: solid 3px rgb(41, 48, 80);
+    border-bottom: solid 3px rgb(41, 48, 80);
+    text-shadow: 2px 2px 5px rgb(185, 185, 185);
+    text-align: center;
+    position: relative;
+    margin: 10px auto; 
+    padding: 10px;
+    width: 300px;
+}
+.profil__cv{
+    display: inline-block;
+    color: rgb(205, 233, 255);
+    text-decoration: none;
+    background-color: rgb(41, 48, 80);
+    padding: 15px;
+    box-shadow: 3px 3px 3px rgb(77, 77, 77);
+    text-shadow: 2px 2px 5px rgb(88, 88, 88);
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 180px;
+}
+.profil__cv:hover{
+    background-color: rgb(56, 89, 133);
+    color: white;
+    transition: 0.2s;
+}
+
+
+/*-------------------------------- SECTION -----------------------------*/
+date{
+    color:rgb(56, 89, 133);
+}
+
+.presentation, .contact, .realisations, .passions{
+    font-size: 1.2em;
+    width: 1000px;
+    margin: 100px auto 150px;
+}
+h2{
+    font-family: "baloo", sans-serif;
+    text-transform: uppercase;
+}
+.contact__elements{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(233, 233, 233);
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px grey;
+    padding: 50px;
+    margin: 50px auto;
+}
+p.bio{
+    font-size: 0.9em;
+    line-height: 25px;
+    text-align: justify;
+}
+.contact__elements img{
+    width: 40px;
+}
+.contact__elements a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+    height: 30px;
+    margin: 10px;
+    color: rgb(0, 140, 255);
+}
+.contact__elements a:hover{
+    text-decoration: underline;
+}
+section h2{
+    color: rgb(41, 48, 80)
+}
+.barre{
+    width: 150px;
+    border-top: solid 0.3em rgb(41, 48, 80);
+    position: relative;
+    bottom: 1.3em;
+}
+.realisations a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    bottom: 20px;
+    height: 30px;
+    margin: 10px;
+}
+
+
+.realisations__elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.realisations__element{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    padding: 50px 20px;
+}
+
+video{
+    width: 500px;
+}
+video:hover{
+    transform: scale(1.05, 1.05);
+    transition: 0.3s;
+}
+.realisations__element aside{
+    width: 500px;
+    padding: 0 50px;
+}
+.realisations__element a{
+    background-color: rgb(41, 48, 80);
+    border-radius: 5px;
+    color: rgb(210, 218, 255);
+    height: 40px;
+    padding: 10px;
+    box-shadow: 1px 1px 3px black;
+    margin-top: 30px;
+}
+.realisations__element a:hover{
+    background-color: rgb(56, 89, 133);
+    color: white;
+    transition: 0.2s;
+}
+aside h3{
+    font-size: 1.3em;
+    color: rgb(41, 48, 80);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+aside p{
+    font-size: 0.8em;
+    padding: 0 20px 20px 0;
+    margin-top: 5px;
+}
+/*-----------------------------  FOOTER  ----------------------------*/
+
+footer{
+    background-color: rgb(77, 77, 77);
+}
+footer .personnel{
+    margin-left: 200px;
+}
+footer .competences{
+    margin-right: 200px;
+}
+.navFooter{
+    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navFooter__barre{
+    height: 100px;
+    border-right: solid 5px black;
+    margin-top: 50px;
+}
+ul.navFooter__listes{
+    padding-left: 10px;
+}
+.navFooter li{
+    list-style-type: none;
+}
+.navFooter a{
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+.navFooter a:hover{
+    text-decoration: underline;
+}
+.navFooter h3{
+    background-color: white;
+    text-align: center;
+    padding: 0 3px;
+}
+
+
+/*__________________________ MEDIA QUERIES  ___________________________*/
+
+@media screen and (max-width: 700px){
+    body{
+        font-size: 11px;
+        width: 100vw;
+        box-shadow: none;
+        margin: 0;
+    }
+    .tag{
+        position: absolute;
+        top: -55px;
+        right: 90px;
+        padding: 0;
+        min-width: 0;
+        background: none;
+    }
+    .tag h1{
+        border: none;
+        padding: 0;
+        color: rgb(210, 218, 255);
+        text-shadow: none;
+        margin: 10px;
+        width: 200px;
+    }
+    a.profil__cv, .tag p{
+    display: none;
+    }
+    .profil img{
+        display: none;
+    }
+
+
+
+    .navHeader{
+
+        padding: 0;
+        background-color: rgb(41, 48, 80);
+        height: 55px;
+    }
+    .toogle{
+        position: absolute;
+    }
+    .navHeader__croix{
+        display: none;
+    }
+    .navHeader__menu{
+        position: absolute;
+        display: block;
+        z-index: 2;
+        left: 20px;
+    }
+    .open .navHeader__croix{
+        position: absolute;
+        display: block;
+        z-index: 2;
+        left: 20px;
+    }
+    .open .navHeader__menu{
+        display: none;
+    }
+    .navHeader p{
+        background-color: rgb(41, 48, 80);
+    }
+    .navHeader__listes{
+        font-size: 1em;
+        position: absolute;
+        display: none;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        text-align: center;
+        display: inline-block;
+        background-color: rgb(41, 48, 80);
+        z-index: 1;
+        transform: translate(-100%);
+        transition: 0.5s;
+        padding: 40px 0 80px;
+    }
+    .open .navHeader__listes{
+        transform: translate(0);
+    }
+    .navHeader__listes li a{
+        box-shadow: none;
+        width: 70vw;
+        background-color: rgb(168, 185, 207);
+        color: rgb(0,0,0);
+    }
+
+
+
+    
+    .bienvenue{
+        position: static;
+        display: inline-block;
+        opacity: 100%;
+        background-color: rgb(168, 185, 207);
+        color: black;
+        width: auto;
+        padding: 8px 5px 5px 20px;
+    }
+    .profil__cv{
+        display: block;
+        margin-left: 0;
+    }
+
+    /*--------------------------  SECTION  ----------------------*/
+
+
+    .presentation, .realisations, .passions{
+        width: 80vw;
+        margin: auto;
+    }
+    
+    p.bio{
+        width: 80vw;
+        margin: 0;
+        text-align: left;
+        line-height: normal;
+    }
+    .contact{
+        width: 100vw;
+        margin: 0;
+        background-color: rgb(233, 233, 233)
+    }
+    .contact__elements img{
+        width: 25px;
+        margin-bottom: 10px;
+    }
+    .contact__mail, .contact__tel, .contact__linkedin{
+        height: 40px;
+    }
+    .contact h2, .contact .barre{
+        margin-left: 10vw;
+    }
+.contact__elements{
+        flex-direction: column;
+        display: inline-block;
+        width: 100vw;
+        box-shadow: none;
+        margin: 0;
+        padding: 0 0 10px 50px;
+    }
+    .realisations__elements{
+        margin-top: 0;
+    }
+    .realisations__element{
+        flex-direction: column;
+        margin: 0 0;
+        margin: 10px 0;
+        width: 80vw;
+        background: none;
+    }
+    video{
+        width: 80vw;
+    }
+    .realisations__element{
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .realisations aside{
+        max-width: 80vw;
+        padding-left: 0;
+    }
+    .realisations__element h3{
+        margin-top: 10px;
+    }
+    .realisations__element a{
+        margin-top: 10px;
+    }
+
+
+    /*------------------------  FOOTER  ----------------------*/
+
+    footer section{
+        margin-left: 50px;
+    }
+    footer section h3{
+        background-color: white;
+        padding: 3px;
+    }
+    .navFooter__barre{
+        display: none;
+    }
+    ul.navFooter__listes{
+        padding-left: 5px;
+    }
+}

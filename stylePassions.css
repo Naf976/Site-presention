@@ -1,0 +1,240 @@
+@font-face{
+    font-family: "baloo";
+    src: url("fonts/Baloo/Baloo-Regular-webfont.eot") format("eot"),
+    url("fonts/Baloo/Baloo-Regular-webfont.svg") format("svg"),
+    url("fonts/Baloo/Baloo-Regular-webfont.ttf") format("truetype"),
+    url("fonts/Baloo/Baloo-Regular-webfont.woff") format("woff");
+
+}
+@font-face {
+    font-family: "amble";
+    src: url("fonts/amble/Amble-Regular-webfont.eot") format("eot"),
+    url("fonts/amble/Amble-Regular-webfont.svg") format("svg"),
+    url("fonts/amble/Amble-Regular-webfont.ttf") format("truetype"),
+    url("fonts/amble/Amble-Regular-webfont.woff") format("woff");
+}
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(218, 218, 218);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(146, 174, 211);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(56, 89, 133);
+
+}
+
+html{
+    background: linear-gradient(to bottom, white, rgb(132, 134, 146) no repeat);
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "amble",sans-serif;
+    width: 100vw;
+    font-size: 16px;
+    margin: 0 auto;
+    animation: ouverture 0.8s 1;
+}
+.toogle{
+    margin: 0;
+}
+@keyframes ouverture{
+    from{transform: scale(0, 0);}
+    to{transform: scale(1, 1);}
+}
+
+
+/* NAVHEADER */
+
+
+.navHeader__menu, .navHeader__croix{
+    display: none;
+}
+.navHeader{
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    background-color: rgb(231, 231, 231);
+    padding: 0 0 20px 0;
+    width: 100vw;
+}
+.navHeader1 li{
+    list-style-type: none;
+}
+.navHeader__listes{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0;
+}
+.navHeader li a{
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px 20px 0 0;
+    background-color: rgb(41, 48, 80);
+    color: rgb(205, 233, 255);
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 3px gray;
+    width: 130px;
+}
+.navHeader li a:hover{
+    background-color: rgb(70, 122, 189);
+    color: white;
+    transform: scale(1.1, 1.1);
+    transition: 0.2s;
+}
+.passions.opened{
+    background-color: rgb(214, 214, 214);
+    color: black
+}
+.passions.opened:hover{
+    background-color: rgb(214, 214, 214);
+    color: black
+}
+
+.passions:hover{
+    animation: none;
+}
+
+/*-------------------------- SECTION ------------------------*/
+
+section#sectionPassions{
+    display: grid;
+    grid-template-areas: "item1 item1"
+                         "item2 item3"
+                         "item4 item5"
+                         "item6 item6";
+    gap: 50px;
+    width: 800px;
+    background-color: rgb(255, 255, 255);
+    margin: 100px auto 50px;
+}
+section div{
+    background-color: rgb(160, 200, 235);
+    position: relative;
+    box-shadow: 2px 2px 10px black;
+}
+div.item1, div.item6{
+    height: 373.19px;
+}
+div.item2, div.item3, div.item4, div.item5 {
+    height: 249.81px;
+}
+.item1{grid-area: item1;}
+.item2{grid-area: item2;}
+.item3{grid-area: item3;}
+.item4{grid-area: item4;}
+.item5{grid-area: item5;}
+.item6{grid-area: item6;}
+
+.musique {width: 100%;}
+.jeux {width: 100%;}
+.decouvertes {width: 100%;}
+.nature {width: 100%;}
+.coder {width: 100%;}
+.photo { width: 100%;}
+
+section#sectionPassions p{
+    font-size: 1.1em;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    color: white;
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+    background-color: rgb(89, 93, 112);
+    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+    
+}
+section#sectionPassions .top, section#sectionPassions .bottom{
+    padding: 150px 20px 0;
+}
+section#sectionPassions p.middle{
+    padding: 100px 5px 0;
+}
+
+section#sectionPassions .item1:hover p, section#sectionPassions .item2:hover p,
+section#sectionPassions .item3:hover p, section#sectionPassions .item4:hover p,
+section#sectionPassions .item5:hover p, section#sectionPassions .item6:hover p{
+    opacity: 1;
+}
+section#sectionPassions .heading{
+    font-size: 1.2em;
+    color: rgb(251, 251, 251);
+    text-shadow: 1px 1px 3px black;
+    background: linear-gradient(90deg,rgb(109, 135, 170), rgb(168, 168, 100));
+    background-size: 1000%;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    margin: 0;
+    opacity: 1;
+    transition: 0.4s;
+    animation: bg-heading 30s infinite alternate;
+}
+@keyframes bg-heading{
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+
+/*--------------------------FOOTER----------------------------*/
+
+footer{
+    background-color: rgb(77, 77, 77);
+}
+footer .personnel{
+    margin-left: 200px;
+}
+footer .competences{
+    margin-right: 200px;
+}
+.navFooter{
+    display: inline-block;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navFooter__barre{
+    height: 100px;
+    border-right: solid 5px black;
+    margin-top: 50px;
+}
+ul.navFooter__listes{
+    padding-left: 10px;
+}
+.navFooter li{
+    list-style-type: none;
+}
+.navFooter a{
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+.navFooter a:hover{
+    text-decoration: underline;
+}
+.navFooter h3{
+    background-color: white;
+    text-align: center;
+    padding: 0 3px;
+}
+
