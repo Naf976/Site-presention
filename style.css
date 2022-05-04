@@ -54,7 +54,7 @@ body{
     display: none;
 }
 .navHeader{
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(210, 218, 230);
     padding: 0 0 20px 0;
 }
 .navHeader1 li{
@@ -71,15 +71,15 @@ body{
     display: inline-block;
     text-decoration: none;
     margin: 20px 20px 0 0;
-    background-color: rgb(41, 48, 80);
-    color: rgb(205, 233, 255);
+    background-color: rgb(59, 88, 126);
+    color: rgb(255, 255, 255);
     padding: 15px;
     border-radius: 30px;
     box-shadow: 1px 1px 3px gray;
     width: 130px;
 }
 .navHeader li a:hover{
-    background-color: rgb(70, 122, 189);
+    background-color: rgb(53, 97, 156);
     color: white;
     transform: scale(1.1, 1.1);
     transition: 0.2s;
@@ -121,7 +121,7 @@ body{
     right: 50px;
     margin: 0;
     padding: 15px 15px 40px 15px;
-    background: rgba(98, 117, 199, 0.65);
+    background: rgba(166, 169, 180, 0.75);
     text-align: center;
     min-width: 400px;
 }
@@ -131,13 +131,13 @@ body{
     font-weight: bold;
     padding: 10px;
     text-shadow: 2px 2px 5px rgb(185, 185, 185);
-    color: rgb(0,0,0);
+    color: rgb(41, 48, 80);
     line-height: 25px;
 
     
 }
 .tag h1{
-    color: rgb(0,0,0);
+    color: rgb(41, 48, 80);
     font-family: "Baloo";
     font-weight: normal;
     text-transform: uppercase;
@@ -153,9 +153,9 @@ body{
 }
 .profil__cv{
     display: inline-block;
-    color: rgb(205, 233, 255);
+    color: rgb(255, 255, 255);
     text-decoration: none;
-    background-color: rgb(41, 48, 80);
+    background-color: rgb(59, 88, 126);
     padding: 15px;
     box-shadow: 3px 3px 3px rgb(77, 77, 77);
     text-shadow: 2px 2px 5px rgb(88, 88, 88);
@@ -165,7 +165,7 @@ body{
     width: 180px;
 }
 .profil__cv:hover{
-    background-color: rgb(56, 89, 133);
+    background-color: rgb(53, 97, 156);
     color: white;
     transition: 0.2s;
 }
@@ -257,16 +257,16 @@ video:hover{
     padding: 0 50px;
 }
 .realisations__element a{
-    background-color: rgb(41, 48, 80);
+    background-color: rgb(59, 88, 126);
     border-radius: 5px;
-    color: rgb(210, 218, 255);
+    color: rgb(255, 255, 255);
     height: 40px;
     padding: 10px;
     box-shadow: 1px 1px 3px black;
     margin-top: 30px;
 }
 .realisations__element a:hover{
-    background-color: rgb(56, 89, 133);
+    background-color: rgb(53, 97, 156);
     color: white;
     transition: 0.2s;
 }
